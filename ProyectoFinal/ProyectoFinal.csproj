@@ -51,11 +51,15 @@
     <Compile Include="AlgoritmosOrdenamiento\CocktailSort.cs" />
     <Compile Include="AlgoritmosOrdenamiento\CombSort.cs" />
     <Compile Include="AlgoritmosOrdenamiento\CountingSort.cs" />
+    <Compile Include="AlgoritmosOrdenamiento\GnomeSort.cs" />
     <Compile Include="Graph\Edge.cs" />
     <Compile Include="Graph\Grafo.cs" />
+    <Compile Include="AlgoritmosOrdenamiento\HeapSort.cs" />
+    <Compile Include="InsertionSort.cs" />
     <Compile Include="Lists\Auto.cs" />
     <Compile Include="Lists\CircularDoublyLinkedList.cs" />
     <Compile Include="Lists\CircularList.cs" />
+    <Compile Include="MergeSort.cs" />
     <Compile Include="Nodes\BinaryTreeNode.cs" />
     <Compile Include="Nodes\DoubleNode.cs" />
     <Compile Include="Lists\DoublyLinkedList.cs" />

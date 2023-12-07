@@ -102,6 +102,18 @@
             this.tabPage13 = new System.Windows.Forms.TabPage();
             this.txtCounting = new System.Windows.Forms.TextBox();
             this.btnCounting = new System.Windows.Forms.Button();
+            this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.txtGnome = new System.Windows.Forms.TextBox();
+            this.btnGnome = new System.Windows.Forms.Button();
+            this.tabPage15 = new System.Windows.Forms.TabPage();
+            this.txtHeap = new System.Windows.Forms.TextBox();
+            this.btnHeap = new System.Windows.Forms.Button();
+            this.tabPage16 = new System.Windows.Forms.TabPage();
+            this.txtInsertion = new System.Windows.Forms.TextBox();
+            this.btnInsertion = new System.Windows.Forms.Button();
+            this.tabPage17 = new System.Windows.Forms.TabPage();
+            this.txtMerge = new System.Windows.Forms.TextBox();
+            this.btnMerge = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -119,6 +131,10 @@
             this.tabPage11.SuspendLayout();
             this.tabPage12.SuspendLayout();
             this.tabPage13.SuspendLayout();
+            this.tabPage14.SuspendLayout();
+            this.tabPage15.SuspendLayout();
+            this.tabPage16.SuspendLayout();
+            this.tabPage17.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -739,6 +755,10 @@
             this.tabControl3.Controls.Add(this.tabPage11);
             this.tabControl3.Controls.Add(this.tabPage12);
             this.tabControl3.Controls.Add(this.tabPage13);
+            this.tabControl3.Controls.Add(this.tabPage14);
+            this.tabControl3.Controls.Add(this.tabPage15);
+            this.tabControl3.Controls.Add(this.tabPage16);
+            this.tabControl3.Controls.Add(this.tabPage17);
             this.tabControl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl3.Location = new System.Drawing.Point(8, 7);
             this.tabControl3.Name = "tabControl3";
@@ -926,11 +946,131 @@
             this.btnCounting.UseVisualStyleBackColor = true;
             this.btnCounting.Click += new System.EventHandler(this.btnCounting_Click);
             // 
+            // tabPage14
+            // 
+            this.tabPage14.Controls.Add(this.txtGnome);
+            this.tabPage14.Controls.Add(this.btnGnome);
+            this.tabPage14.Location = new System.Drawing.Point(4, 34);
+            this.tabPage14.Name = "tabPage14";
+            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage14.Size = new System.Drawing.Size(880, 440);
+            this.tabPage14.TabIndex = 7;
+            this.tabPage14.Text = "Gnome Sort";
+            this.tabPage14.UseVisualStyleBackColor = true;
+            // 
+            // txtGnome
+            // 
+            this.txtGnome.Location = new System.Drawing.Point(220, 27);
+            this.txtGnome.Multiline = true;
+            this.txtGnome.Name = "txtGnome";
+            this.txtGnome.Size = new System.Drawing.Size(621, 387);
+            this.txtGnome.TabIndex = 13;
+            // 
+            // btnGnome
+            // 
+            this.btnGnome.Location = new System.Drawing.Point(40, 158);
+            this.btnGnome.Name = "btnGnome";
+            this.btnGnome.Size = new System.Drawing.Size(115, 58);
+            this.btnGnome.TabIndex = 12;
+            this.btnGnome.Text = "Show";
+            this.btnGnome.UseVisualStyleBackColor = true;
+            this.btnGnome.Click += new System.EventHandler(this.btnGnome_Click);
+            // 
+            // tabPage15
+            // 
+            this.tabPage15.Controls.Add(this.txtHeap);
+            this.tabPage15.Controls.Add(this.btnHeap);
+            this.tabPage15.Location = new System.Drawing.Point(4, 34);
+            this.tabPage15.Name = "tabPage15";
+            this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage15.Size = new System.Drawing.Size(880, 440);
+            this.tabPage15.TabIndex = 8;
+            this.tabPage15.Text = "Heap Sort";
+            this.tabPage15.UseVisualStyleBackColor = true;
+            // 
+            // txtHeap
+            // 
+            this.txtHeap.Location = new System.Drawing.Point(220, 27);
+            this.txtHeap.Multiline = true;
+            this.txtHeap.Name = "txtHeap";
+            this.txtHeap.Size = new System.Drawing.Size(621, 387);
+            this.txtHeap.TabIndex = 15;
+            // 
+            // btnHeap
+            // 
+            this.btnHeap.Location = new System.Drawing.Point(40, 158);
+            this.btnHeap.Name = "btnHeap";
+            this.btnHeap.Size = new System.Drawing.Size(115, 58);
+            this.btnHeap.TabIndex = 14;
+            this.btnHeap.Text = "Show";
+            this.btnHeap.UseVisualStyleBackColor = true;
+            this.btnHeap.Click += new System.EventHandler(this.btnHeap_Click);
+            // 
+            // tabPage16
+            // 
+            this.tabPage16.Controls.Add(this.txtInsertion);
+            this.tabPage16.Controls.Add(this.btnInsertion);
+            this.tabPage16.Location = new System.Drawing.Point(4, 34);
+            this.tabPage16.Name = "tabPage16";
+            this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage16.Size = new System.Drawing.Size(880, 440);
+            this.tabPage16.TabIndex = 9;
+            this.tabPage16.Text = "Insertion Sort";
+            this.tabPage16.UseVisualStyleBackColor = true;
+            // 
+            // txtInsertion
+            // 
+            this.txtInsertion.Location = new System.Drawing.Point(220, 27);
+            this.txtInsertion.Multiline = true;
+            this.txtInsertion.Name = "txtInsertion";
+            this.txtInsertion.Size = new System.Drawing.Size(621, 387);
+            this.txtInsertion.TabIndex = 17;
+            // 
+            // btnInsertion
+            // 
+            this.btnInsertion.Location = new System.Drawing.Point(40, 158);
+            this.btnInsertion.Name = "btnInsertion";
+            this.btnInsertion.Size = new System.Drawing.Size(115, 58);
+            this.btnInsertion.TabIndex = 16;
+            this.btnInsertion.Text = "Show";
+            this.btnInsertion.UseVisualStyleBackColor = true;
+            this.btnInsertion.Click += new System.EventHandler(this.btnInsertion_Click);
+            // 
+            // tabPage17
+            // 
+            this.tabPage17.Controls.Add(this.txtMerge);
+            this.tabPage17.Controls.Add(this.btnMerge);
+            this.tabPage17.Location = new System.Drawing.Point(4, 34);
+            this.tabPage17.Name = "tabPage17";
+            this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage17.Size = new System.Drawing.Size(880, 440);
+            this.tabPage17.TabIndex = 10;
+            this.tabPage17.Text = "Merge Sort";
+            this.tabPage17.UseVisualStyleBackColor = true;
+            // 
+            // txtMerge
+            // 
+            this.txtMerge.Location = new System.Drawing.Point(220, 27);
+            this.txtMerge.Multiline = true;
+            this.txtMerge.Name = "txtMerge";
+            this.txtMerge.Size = new System.Drawing.Size(621, 387);
+            this.txtMerge.TabIndex = 19;
+            // 
+            // btnMerge
+            // 
+            this.btnMerge.Location = new System.Drawing.Point(40, 158);
+            this.btnMerge.Name = "btnMerge";
+            this.btnMerge.Size = new System.Drawing.Size(115, 58);
+            this.btnMerge.TabIndex = 18;
+            this.btnMerge.Text = "Show";
+            this.btnMerge.UseVisualStyleBackColor = true;
+            this.btnMerge.Click += new System.EventHandler(this.btnMerge_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 563);
+            this.ClientSize = new System.Drawing.Size(952, 592);
             this.Controls.Add(this.tabControl2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -964,6 +1104,14 @@
             this.tabPage12.PerformLayout();
             this.tabPage13.ResumeLayout(false);
             this.tabPage13.PerformLayout();
+            this.tabPage14.ResumeLayout(false);
+            this.tabPage14.PerformLayout();
+            this.tabPage15.ResumeLayout(false);
+            this.tabPage15.PerformLayout();
+            this.tabPage16.ResumeLayout(false);
+            this.tabPage16.PerformLayout();
+            this.tabPage17.ResumeLayout(false);
+            this.tabPage17.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1044,6 +1192,18 @@
         private System.Windows.Forms.TabPage tabPage13;
         private System.Windows.Forms.TextBox txtCounting;
         private System.Windows.Forms.Button btnCounting;
+        private System.Windows.Forms.TabPage tabPage14;
+        private System.Windows.Forms.TextBox txtGnome;
+        private System.Windows.Forms.Button btnGnome;
+        private System.Windows.Forms.TabPage tabPage15;
+        private System.Windows.Forms.TextBox txtHeap;
+        private System.Windows.Forms.Button btnHeap;
+        private System.Windows.Forms.TabPage tabPage16;
+        private System.Windows.Forms.TextBox txtInsertion;
+        private System.Windows.Forms.Button btnInsertion;
+        private System.Windows.Forms.TabPage tabPage17;
+        private System.Windows.Forms.TextBox txtMerge;
+        private System.Windows.Forms.Button btnMerge;
     }
 }
 

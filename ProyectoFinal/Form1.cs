@@ -506,5 +506,69 @@ private void btnAddVertex_Click(object sender, EventArgs e)
             txtCounting.Text += ("Tiempo de ejecucion del metodo CountingSort() = " + stopwatch.Elapsed);
             ArrayReset(array);
         }
+
+        private void btnGnome_Click(object sender, EventArgs e)
+        {
+            GnomeSort gnomeSort = new GnomeSort();
+            txtGnome.Text = string.Empty;
+            stopwatch.Reset();
+            txtGnome.Text += ("Arreglo inicial: ");
+            PrintArray(array, txtGnome);
+            stopwatch.Start();
+            gnomeSort.Sort(array);
+            stopwatch.Stop();
+            txtGnome.Text += ("Arreglo ordenado: ");
+            PrintArray(array, txtGnome);
+            txtGnome.Text += ("Tiempo de ejecucion del metodo GnomeSort() = " + stopwatch.Elapsed);
+            ArrayReset(array);
+        }
+
+        private void btnHeap_Click(object sender, EventArgs e)
+        {
+            HeapSort heapSort = new HeapSort();
+            txtHeap.Text = string.Empty;
+            stopwatch.Reset();
+            txtHeap.Text += ("Arreglo inicial: ");
+            PrintArray(array, txtHeap);
+            stopwatch.Start();
+            heapSort.Sort(array);
+            stopwatch.Stop();
+            txtHeap.Text += ("Arreglo ordenado: ");
+            PrintArray(array, txtHeap);
+            txtHeap.Text += ("Tiempo de ejecucion del metodo HeapSort() = " + stopwatch.Elapsed);
+            ArrayReset(array);
+        }
+
+        private void btnInsertion_Click(object sender, EventArgs e)
+        {
+            InsertionSort insertionSort = new InsertionSort();
+            txtInsertion.Text = string.Empty;
+            stopwatch.Reset();
+            txtInsertion.Text += ("Arreglo inicial: ");
+            PrintArray(array, txtInsertion);
+            stopwatch.Start();
+            insertionSort.InsertionSortAlgorithm(array);
+            stopwatch.Stop();
+            txtInsertion.Text += ("Arreglo ordenado: ");
+            PrintArray(array, txtInsertion);
+            txtInsertion.Text += ("Tiempo de ejecucion del metodo InsertionSort() = " + stopwatch.Elapsed);
+            ArrayReset(array);
+        }
+
+        private void btnMerge_Click(object sender, EventArgs e)
+        {
+            MergeSort mergeSort = new MergeSort();
+            txtMerge.Text = string.Empty;
+            stopwatch.Reset();
+            txtMerge.Text += ("Arreglo inicial: ");
+            PrintArray(array, txtMerge);
+            stopwatch.Start();
+            mergeSort.MergeSortt(array);
+            stopwatch.Stop();
+            txtMerge.Text += ("Arreglo ordenado: ");
+            PrintArray(array, txtMerge);
+            txtMerge.Text += ("Tiempo de ejecucion del metodo MergeSort() = " + stopwatch.Elapsed);
+            ArrayReset(array);
+        }
     }
 }
