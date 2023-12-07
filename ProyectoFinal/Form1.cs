@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Security.Cryptography;
 using System.Threading;
 using System.Security;
+using System.Diagnostics;
 
 namespace ProyectoFinal
 {
@@ -25,7 +26,8 @@ namespace ProyectoFinal
         private LinkedList<string> bicola;
         private Grafo grafo;
         private SortedDictionary<int, Queue<string>> colaPrioridad;
-
+        int[] array = { 9, 1, 8, 2, 7 };
+        Stopwatch stopwatch;
 
 
         public Form1()
@@ -40,6 +42,17 @@ namespace ProyectoFinal
             bicola = new LinkedList<string>();
             grafo = new Grafo();
             colaPrioridad = new SortedDictionary<int, Queue<string>>();
+            stopwatch = new Stopwatch();
+        }
+
+        private int[] ArrayReset(int[] arr)
+        {
+            arr[0] = 9;
+            arr[1] = 1;
+            arr[2] = 8;
+            arr[3] = 2;
+            arr[4] = 7;
+            return arr;
         }
 
         #region Listas
@@ -322,10 +335,7 @@ namespace ProyectoFinal
         #endregion
 
         #region Graphs
-
-        #endregion
-
-        private void btnAddVertex_Click(object sender, EventArgs e)
+private void btnAddVertex_Click(object sender, EventArgs e)
         {
             string vertice = txtVertex.Text;
 
@@ -370,6 +380,131 @@ namespace ProyectoFinal
 
             // Mostrar la imagen del grafo en el PictureBox
             pictureBox1.Image = imagenGrafo;
+        }
+        #endregion
+
+        #region Bubble Sort
+        public static void PrintArray(int[] array, TextBox txtBox)
+        {
+            txtBox.Text += ("[" + string.Join(", ", array) + "]\r\n");
+        }
+        public static void BubbleSort(int[] array, TextBox txtBox)
+        {
+            txtBox.Text = string.Empty;
+            txtBox.Text += ("Arreglo inicial: ");
+            PrintArray(array, txtBox);
+
+            for (int i = 0; i < array.Length - 1; i++)
+            {
+                for (int j = 0; j < array.Length - i - 1; j++)
+                {
+                    // Comparar los elementos adyacentes y intercambiar si el elemento actual es menor que el siguiente
+                    if (array[j] > array[j + 1])
+                    {
+                        // Intercambiar elementos
+                        int temp = array[j];
+                        array[j] = array[j + 1];
+                        array[j + 1] = temp;
+
+                        // Mostrar el estado actual del arreglo
+                        txtBox.Text += ("Intercambio - [" + string.Join(", ", array) + "]\r\n");
+                    }
+                }
+            }
+            txtBox.Text += ("Arreglo ordenado: ");
+            PrintArray(array, txtBox);
+        }
+
+        private void btnBubbleRandom_Click(object sender, EventArgs e)
+        {
+            txtBubble.Text = string.Empty;
+            stopwatch.Restart();
+            stopwatch.Start();
+            BubbleSort(array,txtBubble);
+            stopwatch.Stop();
+            txtBubble.Text += ("Tiempo de ejecucion del metodo BubbleSort() = " + stopwatch.Elapsed);
+            ArrayReset(array);
+        }
+
+
+        #endregion
+
+        private void btnBinaryTree_Click(object sender, EventArgs e)
+        {
+            txtBinaryTree.Text = string.Empty;
+            PrintArray(array, txtBinaryTree);
+            BinaryTreeSort binaryTree = new BinaryTreeSort();
+            stopwatch.Restart();
+            stopwatch.Start();
+            binaryTree.Sort(array);
+            stopwatch.Stop();
+            PrintArray(array, txtBinaryTree);
+            txtBinaryTree.Text += ("Tiempo de ejecucion del Metodo Binary Tree Sort = " + stopwatch.Elapsed);
+            ArrayReset(array);
+        }
+
+        private void btnBucket_Click(object sender, EventArgs e)
+        {
+            BucketSort bucketSort = new BucketSort();
+            txtBucket.Text = string.Empty;
+            stopwatch.Reset();
+            txtBucket.Text += ("Arreglo inicial: ");
+            PrintArray(array, txtBucket);
+            stopwatch.Start();
+            bucketSort.BucketSort_int(array, txtBucket);
+            stopwatch.Stop();
+            txtBucket.Text += ("Arreglo ordenado: ");
+            PrintArray(array, txtBucket);
+            txtBucket.Text += ("Tiempo de ejecucion del metodo BucketSort() = " + stopwatch.Elapsed);
+            ArrayReset(array);
+        }
+
+        private void btnCocktail_Click(object sender, EventArgs e)
+        {
+            CocktailSort cocktailSort = new CocktailSort();
+            txtCocktail.Text = string.Empty;
+            stopwatch.Reset();
+            txtCocktail.Text += ("Arreglo inicial: ");
+            PrintArray(array, txtCocktail);
+            stopwatch.Start();
+            cocktailSort.cocktailSort(array);
+            stopwatch.Stop();
+            txtCocktail.Text += ("Arreglo ordenado: ");
+            PrintArray(array, txtCocktail);
+            txtCocktail.Text += ("Tiempo de ejecucion del metodo CocktailSort() = " + stopwatch.Elapsed);
+            ArrayReset(array);
+        }
+
+        private void btnComb_Click(object sender, EventArgs e)
+        {
+            CombSort combSort = new CombSort();
+            txtComb.Text = string.Empty;
+            stopwatch.Reset();
+            txtComb.Text += ("Arreglo inicial: ");
+            PrintArray(array, txtComb);
+            stopwatch.Start();
+            combSort.Sort(array);
+            stopwatch.Stop();
+            txtComb.Text += ("Arreglo ordenado: ");
+            PrintArray(array, txtComb);
+            txtComb.Text += ("Tiempo de ejecucion del metodo CombSort() = " + stopwatch.Elapsed);
+            ArrayReset(array);
+        }
+
+        private void btnCounting_Click(object sender, EventArgs e)
+        {
+            CountingSort countingSort = new CountingSort();
+            txtCounting.Text = string.Empty;
+            stopwatch.Reset();
+            txtCounting.Text += ("Arreglo inicial: ");
+            PrintArray(array, txtCounting);
+            stopwatch.Start();
+            countingSort.Sort(array);
+            stopwatch.Stop();
+            txtCounting.Text += ("Arreglo ordenado: ");
+            PrintArray(array, txtCounting);
+            txtCounting.Text += ("Tiempo de ejecucion del metodo CountingSort() = " + stopwatch.Elapsed);
+            ArrayReset(array);
         }
     }
 }

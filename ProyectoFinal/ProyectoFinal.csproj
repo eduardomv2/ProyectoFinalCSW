@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlgoritmosOrdenamiento\BinaryTreeSort.cs" />
+    <Compile Include="AlgoritmosOrdenamiento\BucketSort.cs" />
+    <Compile Include="AlgoritmosOrdenamiento\CocktailSort.cs" />
+    <Compile Include="AlgoritmosOrdenamiento\CombSort.cs" />
+    <Compile Include="AlgoritmosOrdenamiento\CountingSort.cs" />
     <Compile Include="Graph\Edge.cs" />
     <Compile Include="Graph\Grafo.cs" />
     <Compile Include="Lists\Auto.cs" />
     <Compile Include="Lists\CircularDoublyLinkedList.cs" />
     <Compile Include="Lists\CircularList.cs" />
+    <Compile Include="Nodes\BinaryTreeNode.cs" />
     <Compile Include="Nodes\DoubleNode.cs" />
     <Compile Include="Lists\DoublyLinkedList.cs" />
     <Compile Include="Form1.cs">
@@ -92,5 +98,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
