@@ -114,6 +114,24 @@
             this.tabPage17 = new System.Windows.Forms.TabPage();
             this.txtMerge = new System.Windows.Forms.TextBox();
             this.btnMerge = new System.Windows.Forms.Button();
+            this.tabPage18 = new System.Windows.Forms.TabPage();
+            this.txtPigeon = new System.Windows.Forms.TextBox();
+            this.btnPigeon = new System.Windows.Forms.Button();
+            this.tabPage19 = new System.Windows.Forms.TabPage();
+            this.txtQuick = new System.Windows.Forms.TextBox();
+            this.btnQuick = new System.Windows.Forms.Button();
+            this.tabPage20 = new System.Windows.Forms.TabPage();
+            this.txtRadix = new System.Windows.Forms.TextBox();
+            this.btnRadix = new System.Windows.Forms.Button();
+            this.tabPage21 = new System.Windows.Forms.TabPage();
+            this.txtSelection = new System.Windows.Forms.TextBox();
+            this.btnSelection = new System.Windows.Forms.Button();
+            this.tabPage22 = new System.Windows.Forms.TabPage();
+            this.txtShell = new System.Windows.Forms.TextBox();
+            this.btnShell = new System.Windows.Forms.Button();
+            this.tabPage23 = new System.Windows.Forms.TabPage();
+            this.txtSmooth = new System.Windows.Forms.TextBox();
+            this.btnSmooth = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -135,6 +153,12 @@
             this.tabPage15.SuspendLayout();
             this.tabPage16.SuspendLayout();
             this.tabPage17.SuspendLayout();
+            this.tabPage18.SuspendLayout();
+            this.tabPage19.SuspendLayout();
+            this.tabPage20.SuspendLayout();
+            this.tabPage21.SuspendLayout();
+            this.tabPage22.SuspendLayout();
+            this.tabPage23.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -759,6 +783,12 @@
             this.tabControl3.Controls.Add(this.tabPage15);
             this.tabControl3.Controls.Add(this.tabPage16);
             this.tabControl3.Controls.Add(this.tabPage17);
+            this.tabControl3.Controls.Add(this.tabPage18);
+            this.tabControl3.Controls.Add(this.tabPage19);
+            this.tabControl3.Controls.Add(this.tabPage20);
+            this.tabControl3.Controls.Add(this.tabPage21);
+            this.tabControl3.Controls.Add(this.tabPage22);
+            this.tabControl3.Controls.Add(this.tabPage23);
             this.tabControl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl3.Location = new System.Drawing.Point(8, 7);
             this.tabControl3.Name = "tabControl3";
@@ -1066,6 +1096,186 @@
             this.btnMerge.UseVisualStyleBackColor = true;
             this.btnMerge.Click += new System.EventHandler(this.btnMerge_Click);
             // 
+            // tabPage18
+            // 
+            this.tabPage18.Controls.Add(this.txtPigeon);
+            this.tabPage18.Controls.Add(this.btnPigeon);
+            this.tabPage18.Location = new System.Drawing.Point(4, 34);
+            this.tabPage18.Name = "tabPage18";
+            this.tabPage18.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage18.Size = new System.Drawing.Size(880, 440);
+            this.tabPage18.TabIndex = 11;
+            this.tabPage18.Text = "Pigeon Hole Sort";
+            this.tabPage18.UseVisualStyleBackColor = true;
+            // 
+            // txtPigeon
+            // 
+            this.txtPigeon.Location = new System.Drawing.Point(220, 27);
+            this.txtPigeon.Multiline = true;
+            this.txtPigeon.Name = "txtPigeon";
+            this.txtPigeon.Size = new System.Drawing.Size(621, 387);
+            this.txtPigeon.TabIndex = 21;
+            // 
+            // btnPigeon
+            // 
+            this.btnPigeon.Location = new System.Drawing.Point(40, 158);
+            this.btnPigeon.Name = "btnPigeon";
+            this.btnPigeon.Size = new System.Drawing.Size(115, 58);
+            this.btnPigeon.TabIndex = 20;
+            this.btnPigeon.Text = "Show";
+            this.btnPigeon.UseVisualStyleBackColor = true;
+            this.btnPigeon.Click += new System.EventHandler(this.btnPigeon_Click);
+            // 
+            // tabPage19
+            // 
+            this.tabPage19.Controls.Add(this.txtQuick);
+            this.tabPage19.Controls.Add(this.btnQuick);
+            this.tabPage19.Location = new System.Drawing.Point(4, 34);
+            this.tabPage19.Name = "tabPage19";
+            this.tabPage19.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage19.Size = new System.Drawing.Size(880, 440);
+            this.tabPage19.TabIndex = 12;
+            this.tabPage19.Text = "Quick Sort";
+            this.tabPage19.UseVisualStyleBackColor = true;
+            // 
+            // txtQuick
+            // 
+            this.txtQuick.Location = new System.Drawing.Point(220, 27);
+            this.txtQuick.Multiline = true;
+            this.txtQuick.Name = "txtQuick";
+            this.txtQuick.Size = new System.Drawing.Size(621, 387);
+            this.txtQuick.TabIndex = 23;
+            // 
+            // btnQuick
+            // 
+            this.btnQuick.Location = new System.Drawing.Point(40, 158);
+            this.btnQuick.Name = "btnQuick";
+            this.btnQuick.Size = new System.Drawing.Size(115, 58);
+            this.btnQuick.TabIndex = 22;
+            this.btnQuick.Text = "Show";
+            this.btnQuick.UseVisualStyleBackColor = true;
+            this.btnQuick.Click += new System.EventHandler(this.btnQuick_Click);
+            // 
+            // tabPage20
+            // 
+            this.tabPage20.Controls.Add(this.txtRadix);
+            this.tabPage20.Controls.Add(this.btnRadix);
+            this.tabPage20.Location = new System.Drawing.Point(4, 34);
+            this.tabPage20.Name = "tabPage20";
+            this.tabPage20.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage20.Size = new System.Drawing.Size(880, 440);
+            this.tabPage20.TabIndex = 13;
+            this.tabPage20.Text = "Radix Sort";
+            this.tabPage20.UseVisualStyleBackColor = true;
+            // 
+            // txtRadix
+            // 
+            this.txtRadix.Location = new System.Drawing.Point(220, 27);
+            this.txtRadix.Multiline = true;
+            this.txtRadix.Name = "txtRadix";
+            this.txtRadix.Size = new System.Drawing.Size(621, 387);
+            this.txtRadix.TabIndex = 25;
+            // 
+            // btnRadix
+            // 
+            this.btnRadix.Location = new System.Drawing.Point(40, 158);
+            this.btnRadix.Name = "btnRadix";
+            this.btnRadix.Size = new System.Drawing.Size(115, 58);
+            this.btnRadix.TabIndex = 24;
+            this.btnRadix.Text = "Show";
+            this.btnRadix.UseVisualStyleBackColor = true;
+            this.btnRadix.Click += new System.EventHandler(this.btnRadix_Click);
+            // 
+            // tabPage21
+            // 
+            this.tabPage21.Controls.Add(this.txtSelection);
+            this.tabPage21.Controls.Add(this.btnSelection);
+            this.tabPage21.Location = new System.Drawing.Point(4, 34);
+            this.tabPage21.Name = "tabPage21";
+            this.tabPage21.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage21.Size = new System.Drawing.Size(880, 440);
+            this.tabPage21.TabIndex = 14;
+            this.tabPage21.Text = "Selection Sort";
+            this.tabPage21.UseVisualStyleBackColor = true;
+            // 
+            // txtSelection
+            // 
+            this.txtSelection.Location = new System.Drawing.Point(220, 27);
+            this.txtSelection.Multiline = true;
+            this.txtSelection.Name = "txtSelection";
+            this.txtSelection.Size = new System.Drawing.Size(621, 387);
+            this.txtSelection.TabIndex = 27;
+            // 
+            // btnSelection
+            // 
+            this.btnSelection.Location = new System.Drawing.Point(40, 158);
+            this.btnSelection.Name = "btnSelection";
+            this.btnSelection.Size = new System.Drawing.Size(115, 58);
+            this.btnSelection.TabIndex = 26;
+            this.btnSelection.Text = "Show";
+            this.btnSelection.UseVisualStyleBackColor = true;
+            this.btnSelection.Click += new System.EventHandler(this.btnSelection_Click);
+            // 
+            // tabPage22
+            // 
+            this.tabPage22.Controls.Add(this.txtShell);
+            this.tabPage22.Controls.Add(this.btnShell);
+            this.tabPage22.Location = new System.Drawing.Point(4, 34);
+            this.tabPage22.Name = "tabPage22";
+            this.tabPage22.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage22.Size = new System.Drawing.Size(880, 440);
+            this.tabPage22.TabIndex = 15;
+            this.tabPage22.Text = "Shell Sort";
+            this.tabPage22.UseVisualStyleBackColor = true;
+            // 
+            // txtShell
+            // 
+            this.txtShell.Location = new System.Drawing.Point(220, 27);
+            this.txtShell.Multiline = true;
+            this.txtShell.Name = "txtShell";
+            this.txtShell.Size = new System.Drawing.Size(621, 387);
+            this.txtShell.TabIndex = 29;
+            // 
+            // btnShell
+            // 
+            this.btnShell.Location = new System.Drawing.Point(40, 158);
+            this.btnShell.Name = "btnShell";
+            this.btnShell.Size = new System.Drawing.Size(115, 58);
+            this.btnShell.TabIndex = 28;
+            this.btnShell.Text = "Show";
+            this.btnShell.UseVisualStyleBackColor = true;
+            this.btnShell.Click += new System.EventHandler(this.btnShell_Click);
+            // 
+            // tabPage23
+            // 
+            this.tabPage23.Controls.Add(this.txtSmooth);
+            this.tabPage23.Controls.Add(this.btnSmooth);
+            this.tabPage23.Location = new System.Drawing.Point(4, 34);
+            this.tabPage23.Name = "tabPage23";
+            this.tabPage23.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage23.Size = new System.Drawing.Size(880, 440);
+            this.tabPage23.TabIndex = 16;
+            this.tabPage23.Text = "SmoothSort";
+            this.tabPage23.UseVisualStyleBackColor = true;
+            // 
+            // txtSmooth
+            // 
+            this.txtSmooth.Location = new System.Drawing.Point(220, 27);
+            this.txtSmooth.Multiline = true;
+            this.txtSmooth.Name = "txtSmooth";
+            this.txtSmooth.Size = new System.Drawing.Size(621, 387);
+            this.txtSmooth.TabIndex = 31;
+            // 
+            // btnSmooth
+            // 
+            this.btnSmooth.Location = new System.Drawing.Point(40, 158);
+            this.btnSmooth.Name = "btnSmooth";
+            this.btnSmooth.Size = new System.Drawing.Size(115, 58);
+            this.btnSmooth.TabIndex = 30;
+            this.btnSmooth.Text = "Show";
+            this.btnSmooth.UseVisualStyleBackColor = true;
+            this.btnSmooth.Click += new System.EventHandler(this.btnSmooth_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1112,6 +1322,18 @@
             this.tabPage16.PerformLayout();
             this.tabPage17.ResumeLayout(false);
             this.tabPage17.PerformLayout();
+            this.tabPage18.ResumeLayout(false);
+            this.tabPage18.PerformLayout();
+            this.tabPage19.ResumeLayout(false);
+            this.tabPage19.PerformLayout();
+            this.tabPage20.ResumeLayout(false);
+            this.tabPage20.PerformLayout();
+            this.tabPage21.ResumeLayout(false);
+            this.tabPage21.PerformLayout();
+            this.tabPage22.ResumeLayout(false);
+            this.tabPage22.PerformLayout();
+            this.tabPage23.ResumeLayout(false);
+            this.tabPage23.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1204,6 +1426,24 @@
         private System.Windows.Forms.TabPage tabPage17;
         private System.Windows.Forms.TextBox txtMerge;
         private System.Windows.Forms.Button btnMerge;
+        private System.Windows.Forms.TabPage tabPage18;
+        private System.Windows.Forms.TextBox txtPigeon;
+        private System.Windows.Forms.Button btnPigeon;
+        private System.Windows.Forms.TabPage tabPage19;
+        private System.Windows.Forms.TextBox txtQuick;
+        private System.Windows.Forms.Button btnQuick;
+        private System.Windows.Forms.TabPage tabPage20;
+        private System.Windows.Forms.TextBox txtRadix;
+        private System.Windows.Forms.Button btnRadix;
+        private System.Windows.Forms.TabPage tabPage21;
+        private System.Windows.Forms.TextBox txtSelection;
+        private System.Windows.Forms.Button btnSelection;
+        private System.Windows.Forms.TabPage tabPage22;
+        private System.Windows.Forms.TextBox txtShell;
+        private System.Windows.Forms.Button btnShell;
+        private System.Windows.Forms.TabPage tabPage23;
+        private System.Windows.Forms.TextBox txtSmooth;
+        private System.Windows.Forms.Button btnSmooth;
     }
 }
 

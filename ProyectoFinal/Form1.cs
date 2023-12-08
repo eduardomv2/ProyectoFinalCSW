@@ -570,5 +570,103 @@ private void btnAddVertex_Click(object sender, EventArgs e)
             txtMerge.Text += ("Tiempo de ejecucion del metodo MergeSort() = " + stopwatch.Elapsed);
             ArrayReset(array);
         }
+
+        private void btnPigeon_Click(object sender, EventArgs e)
+        {
+            PigeonHole pigeonHole = new PigeonHole();
+            txtPigeon.Text = string.Empty;
+            stopwatch.Reset();
+            txtPigeon.Text += ("Arreglo inicial: ");
+            PrintArray(array, txtPigeon);
+            stopwatch.Start();
+            pigeonHole.PigeonholeSort(array);
+            stopwatch.Stop();
+            txtPigeon.Text += ("Arreglo ordenado: ");
+            PrintArray(array, txtPigeon);
+            txtPigeon.Text += ("Tiempo de ejecucion del metodo PigeonHoleSort() = " + stopwatch.Elapsed);
+            ArrayReset(array);
+        }
+
+        private void btnQuick_Click(object sender, EventArgs e)
+        {
+            txtQuick.Text = string.Empty;
+            QuickSort quickSort= new QuickSort();
+            stopwatch.Reset();
+            txtQuick.Text += ("Arreglo inicial: ");
+            PrintArray(array, txtQuick);
+            stopwatch.Start();
+            quickSort.quicksort(ref array, 0, 4, txtQuick);
+            stopwatch.Stop();
+            txtQuick.Text += ("Arreglo ordenado: ");
+            PrintArray(array, txtQuick);
+            txtQuick.Text += ("Tiempo de ejecucion del metodo QuickSort() = " + stopwatch.Elapsed);
+            ArrayReset(array);
+        }
+
+        private void btnRadix_Click(object sender, EventArgs e)
+        {
+            txtRadix.Text = string.Empty;
+            RadixSort radixSort = new RadixSort();
+            stopwatch.Reset();
+            txtRadix.Text += ("Arreglo inicial: ");
+            PrintArray(array, txtRadix);
+            stopwatch.Start();
+            radixSort.Sort(array);
+            stopwatch.Stop();
+            txtRadix.Text += ("Arreglo ordenado: ");
+            PrintArray(array, txtRadix);
+            txtRadix.Text += ("Tiempo de ejecucion del metodo RadixSort() = " + stopwatch.Elapsed);
+            ArrayReset(array);
+        }
+
+        private void btnSelection_Click(object sender, EventArgs e)
+        {
+            txtSelection.Text = string.Empty;
+            Selection_Sort selection_Sort = new Selection_Sort();
+            stopwatch.Reset();
+            txtSelection.Text += ("Arreglo inicial: ");
+            PrintArray(array, txtSelection);
+            stopwatch.Start();
+            selection_Sort.Sort(array);
+            stopwatch.Stop();
+            txtSelection.Text += ("Arreglo ordenado: ");
+            PrintArray(array, txtSelection);
+            txtSelection.Text += ("Tiempo de ejecucion del metodo SelectionSort() = " + stopwatch.Elapsed);
+            ArrayReset(array);
+        }
+
+        private void btnShell_Click(object sender, EventArgs e)
+        {
+            txtShell.Text = string.Empty;
+            ShellSort shellSort = new ShellSort();
+            txtShell.Text = string.Empty;
+            stopwatch.Reset();
+            txtShell.Text += ("Arreglo inicial: ");
+            PrintArray(array, txtShell);
+            stopwatch.Start();
+            shellSort.Shell_Sort(array, txtShell);
+            stopwatch.Stop();
+            txtShell.Text += ("\r\nArreglo ordenado: ");
+            PrintArray(array, txtShell);
+            txtShell.Text += ("Tiempo de ejecucion del metodo ShellSort() = " + stopwatch.Elapsed);
+            ArrayReset(array);
+        }
+
+        private void btnSmooth_Click(object sender, EventArgs e)
+        {
+            txtSmooth.Text = string.Empty;
+            SmoothSort smoothSort = new SmoothSort();
+            txtSmooth.Text = string.Empty;
+            stopwatch.Reset();
+            txtSmooth.Text += ("Arreglo inicial: ");
+            PrintArray(array, txtSmooth);
+            stopwatch.Start();
+            smoothSort.Sort(array);
+            stopwatch.Stop();
+            txtSmooth.Text += ("Arreglo ordenado: ");
+            PrintArray(array, txtSmooth);
+            txtSmooth.Text += ("Tiempo de ejecucion del metodo SmoothSort() = " + stopwatch.Elapsed);
+            ArrayReset(array);
+        }
     }
 }
