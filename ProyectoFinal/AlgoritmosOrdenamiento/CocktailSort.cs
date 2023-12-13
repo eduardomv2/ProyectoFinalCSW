@@ -15,7 +15,7 @@ namespace ProyectoFinal
             int start = 0;
             int end = n - 1;
             while (swapped)
-            {
+            { 
                 // Move from left to right
                 swapped = false;
                 for (int i = start; i < end; i++)

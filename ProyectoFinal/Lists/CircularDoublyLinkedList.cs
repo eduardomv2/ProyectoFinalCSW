@@ -12,7 +12,7 @@ namespace ProyectoFinal
     {
         private DoubleNode Head { get; set; }
         private DoubleNode LastNode { get; set; }
-
+         
         public CircularDoublyLinkedList()
         {
             Clear();

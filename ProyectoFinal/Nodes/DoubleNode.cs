@@ -13,7 +13,7 @@ namespace ProyectoFinal
         public int Data { get; set; }
 
         public DoubleNode(int data)
-        {
+        { 
             Data = data;
             Next = null;
             Back = null;

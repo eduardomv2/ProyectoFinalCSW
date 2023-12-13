@@ -13,7 +13,7 @@ namespace ProyectoFinal
 
         public Edge(Vertex origen, Vertex destino)
         {
-            Origen = origen;
+            Origen = origen; 
             Destino = destino;
         }
     }

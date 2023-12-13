@@ -11,7 +11,7 @@ namespace ProyectoFinal
     internal class Auto
     {
         public void Auto_Add_SimpleList(SimpleList<int> lista, Random R, System.Windows.Forms.TextBox textBox, int numDatos)
-        {
+        { 
             for (int i = 0; i < numDatos; i++)
             {
                 lista.Add(R.Next(25));

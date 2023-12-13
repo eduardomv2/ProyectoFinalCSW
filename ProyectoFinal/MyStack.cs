@@ -26,7 +26,7 @@ namespace ProyectoFinal
         {
             if (stackList.Count == 0)
             {
-                throw new InvalidOperationException("La pila está vacía.");
+                throw new InvalidOperationException("Stack empty");
             }
 
             int lastIndex = stackList.Count - 1;
@@ -40,7 +40,7 @@ namespace ProyectoFinal
         {
             if (stackList.Count == 0)
             {
-                throw new InvalidOperationException("La pila está vacía.");
+                throw new InvalidOperationException("Stack empty.");
             }
 
             return stackList[stackList.Count - 1];

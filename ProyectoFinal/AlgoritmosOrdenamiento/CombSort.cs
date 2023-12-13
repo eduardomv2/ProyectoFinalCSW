@@ -17,7 +17,7 @@ namespace ProyectoFinal
 
             // Factor de reducción
             double shrink = 1.3;
-
+             
             bool swapped;
 
             do

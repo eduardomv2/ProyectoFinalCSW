@@ -18,7 +18,7 @@ namespace ProyectoFinal
             // Crear un arreglo de conteo y un arreglo resultado
             int[] count = new int[max + 1];
             int[] output = new int[n];
-
+             
             // Inicializar el arreglo de conteo
             for (int i = 0; i <= max; i++)
             {

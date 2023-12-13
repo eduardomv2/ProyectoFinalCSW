@@ -16,7 +16,7 @@ namespace ProyectoFinal
         {
             Clear();
         }
-
+         
         public void Add(int data)
         {
             //Caso 0: Creamos un nuevo nodo

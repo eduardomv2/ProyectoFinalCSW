@@ -17,7 +17,7 @@ namespace ProyectoFinal
             for (int i = 0; i < buckets.Length; i++)
             {
                 txtBox.Text += ($"Bucket {i}: ");
-                foreach (var item in buckets[i])
+                foreach (var item in buckets[i]) 
                 {
                     txtBox.Text += ($"{item} ");
                 }

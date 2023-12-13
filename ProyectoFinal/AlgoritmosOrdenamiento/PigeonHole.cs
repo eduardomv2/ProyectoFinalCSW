@@ -16,7 +16,7 @@ namespace ProyectoFinal
 
             for (int a = 1; a < arr.Length; a++)
             {
-                if (arr[a] > max)
+                if (arr[a] > max) 
                     max = arr[a];
                 if (arr[a] < min)
                     min = arr[a];

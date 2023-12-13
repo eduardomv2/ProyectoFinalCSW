@@ -18,7 +18,7 @@ namespace ProyectoFinal
             int[] right = new int[arr.Length - mid];
 
             Array.Copy(arr, 0, left, 0, mid);
-            Array.Copy(arr, mid, right, 0, arr.Length - mid);
+            Array.Copy(arr, mid, right, 0, arr.Length - mid); 
 
             MergeSortt(left);
             MergeSortt(right);

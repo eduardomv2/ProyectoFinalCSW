@@ -15,7 +15,7 @@ namespace ProyectoFinal
 
         public DoublyLinkedList()
         {
-            Clear();
+            Clear(); 
         }
 
         public void Add(int data)

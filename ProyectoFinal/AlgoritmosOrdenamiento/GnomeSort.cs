@@ -16,7 +16,7 @@ namespace ProyectoFinal
             while (index < n)
             {
                 if (index == 0)
-                {
+                { 
                     index++;
                 }
                 if (arr[index] >= arr[index - 1])

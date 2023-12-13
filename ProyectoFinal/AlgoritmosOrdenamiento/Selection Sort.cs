@@ -20,7 +20,7 @@ namespace ProyectoFinal
                 {
                     if (arr[j] < arr[minIndex])
                     {
-                        minIndex = j;
+                        minIndex = j; 
                     }
                 }
 

@@ -11,7 +11,7 @@ namespace ProyectoFinal
     internal class BinaryTreeSort
     {
         private BinaryTreeNode root;
-        private int index = 0;
+        private int index = 0; 
         public void Sort(int[] arr)
         {
             // Construir el árbol binario

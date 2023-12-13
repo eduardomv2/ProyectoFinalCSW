@@ -20,7 +20,7 @@ namespace ProyectoFinal
         public void Shell_Sort(int[] array, TextBox textBox)
         {
             // se obtiene la longitud del array
-            int n = array.Length;
+            int n = array.Length; 
             // se obtiene el tamaño de espacio entre elementos
             int gap = n / 2;
 

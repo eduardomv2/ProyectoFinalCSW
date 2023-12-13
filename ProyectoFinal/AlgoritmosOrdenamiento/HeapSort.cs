@@ -18,7 +18,7 @@ namespace ProyectoFinal
                 Heapify(arr, n, i);
             }
 
-            // Extraer elementos uno por uno del heap
+            // Extraer elementos uno por uno del heap 
             for (int i = n - 1; i > 0; i--)
             {
                 // Mover la raíz actual al final

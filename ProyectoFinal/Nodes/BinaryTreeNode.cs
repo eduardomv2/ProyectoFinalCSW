@@ -12,7 +12,7 @@ namespace ProyectoFinal.Nodes
         public BinaryTreeNode Left, Right;
 
         public BinaryTreeNode(int value)
-        {
+        { 
             Value = value;
             Left = Right = null;
         }

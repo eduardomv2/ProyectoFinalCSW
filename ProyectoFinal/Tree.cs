@@ -55,7 +55,7 @@ namespace ProyectoFinal
             }
             else
             {
-                textBox.Text = ($"No se encontró el nodo padre '{parentNodeName}'.");
+                textBox.Text = ($"parent node not found '{parentNodeName}'.");
                 await Task.Delay(2000);
                 textBox.Text = string.Empty;
                 PrintTree(Root, textBox);
@@ -78,12 +78,12 @@ namespace ProyectoFinal
                     {
                         // Assign the first child as the new root
                         Root = nodeToDelete.Children[0];
-                        textBox.Text = ($"El nodo raíz '{nodeName}' se eliminó, y el primer hijo se convirtió en el nuevo raíz.");
+                        textBox.Text = ($"The root node '{nodeName}' was deleted, and the first child became the new root..");
                     }
                     else
                     {
                         Root = null;
-                        textBox.Text = ($"El nodo raíz '{nodeName}' se eliminó.");
+                        textBox.Text = ($"The root node '{nodeName}' was deleted");
                     }
                 }
                 else if (parent != null)
@@ -96,7 +96,7 @@ namespace ProyectoFinal
                         parent.Children.Insert(parent.Children.IndexOf(nodeToDelete), firstChild);
                     }
                     parent.Children.Remove(nodeToDelete);
-                    textBox.Text = ($"El nodo '{nodeName}' se eliminó, y el primer hijo se convirtió en el nuevo padre sin cambiar la posición de la rama.");
+                    textBox.Text = ($"The node '{nodeName}' was deleted, and the first child became the new parent without changing the branch position.");
                 }
                 await Task.Delay(2000);
                 textBox.Text = string.Empty;
@@ -104,7 +104,7 @@ namespace ProyectoFinal
             }
             else
             {
-                textBox.Text = ($"No se encontró el nodo '{nodeName}'.");
+                textBox.Text = ($"Node '{nodeName} not found'.");
             }
         }
 

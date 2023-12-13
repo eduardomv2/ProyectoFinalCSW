@@ -12,7 +12,7 @@ namespace ProyectoFinal
         public int Data { get; set; }
 
         public Node(int d)
-        {
+        { 
             Data = d;
             Next = null;
         }

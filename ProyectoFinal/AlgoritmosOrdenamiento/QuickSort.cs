@@ -16,7 +16,7 @@ namespace ProyectoFinal
             int Temporary = IndexOnew;
             IndexOnew = IndexTwo;
             IndexTwo = Temporary;
-        }
+        } 
 
         private static int Partition(ref int[] Array, int FirstIndex, int LastIndex, TextBox textBox)
         {
